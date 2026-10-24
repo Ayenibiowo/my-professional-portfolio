@@ -42,3 +42,7 @@ The latest supplied portfolio notes establish Midnight Blue (#101D30), four jour
 ## Header and hero
 
 Fixed four-link header: My Journey, About me, Work, Writing, shared across all seven pages. The homepage uses an editorial statement and a compact profile card, with deep ink and warm ivory as its primary palette. Anchor offsets account for the fixed navigation.
+
+## FOLIO format
+
+The current presentation follows the supplied FOLIO.pdf: a dark gallery, oversized introduction, prominent two-column project grid, compact about/journey/expertise/mentorship panels, venture and book galleries, and a full-width contact card. All existing content and publication restrictions are retained. The fixed four-link navigation remains.
