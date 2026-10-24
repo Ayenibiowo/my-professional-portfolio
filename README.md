@@ -46,3 +46,5 @@ Fixed four-link header: My Journey, About me, Work, Writing, shared across all s
 ## FOLIO format
 
 The current presentation follows the supplied FOLIO.pdf: a dark gallery, oversized introduction, prominent two-column project grid, compact about/journey/expertise/mentorship panels, venture and book galleries, and a full-width contact card. All existing content and publication restrictions are retained. The fixed four-link navigation remains.
+
+The FOLIO layout now uses the reference’s single oversized professional title, visual-first project cards with minimal captions, wide visual/content column and narrow stacked information sidebar. Existing venture and book content extends the wider column; current journey, expertise, and mentorship content extends the sidebar. A typographic identity panel occupies the reference portrait slot until a real portrait is supplied.
