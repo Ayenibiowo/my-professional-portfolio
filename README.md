@@ -33,4 +33,4 @@ The bookshelf and five individual book pages use the supplied summaries. Product
 
 ## Visual direction
 
-The current layout adapts the supplied home.pdf: blue introduction card, typographic identity panel pending a real portrait, serif editorial headings, accessible three-chapter journey tabs, navy venture feature, bordered project cards, and a writing index. The reference person’s credentials, portrait, employers, and awards are not used.
+The current layout adapts the supplied home.pdf: forest-green introduction card, typographic identity panel pending a real portrait, serif editorial headings, accessible three-chapter journey tabs, deep-green venture feature, bordered project cards, and a writing index. The reference person’s credentials, portrait, employers, and awards are not used.
