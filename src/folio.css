@@ -20,3 +20,7 @@
 /* Larger, more readable hero supporting copy. */
 .folio-hero .hero-copy>.hero-introduction{font-size:clamp(22px,2vw,28px);line-height:1.6;max-width:960px;letter-spacing:-.35px;color:#b5bdc4}
 @media(max-width:760px){.folio-hero .hero-copy>.hero-introduction{font-size:21px;line-height:1.65;letter-spacing:-.2px;max-width:100%}.folio-hero .hero-introduction .desktop-break{display:none}}
+/* Override legacy paragraph selectors: verify the rendered size, not just the declaration. */
+.signature-hero.folio-hero .hero-copy>p.hero-introduction{font-size:28px;line-height:1.55;max-width:1100px;letter-spacing:-.3px;color:#aeb6be;margin-bottom:0}
+@media(max-width:1100px){.signature-hero.folio-hero .hero-copy>p.hero-introduction{font-size:25px;max-width:920px}}
+@media(max-width:760px){.signature-hero.folio-hero .hero-copy>p.hero-introduction{font-size:22px;line-height:1.6;max-width:100%;letter-spacing:-.2px}}
