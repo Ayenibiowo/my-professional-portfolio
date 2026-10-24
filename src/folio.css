@@ -17,3 +17,6 @@
 .folio-hero h1{font-size:clamp(76px,11.4vw,164px);font-weight:450;line-height:1.04;letter-spacing:-7px;margin-bottom:27px}.folio-hero .hero-copy>.hero-introduction{font-size:18px;line-height:1.7;max-width:750px;color:#a8b1b9;margin-bottom:0}
 @media(max-width:1100px){.folio-hero h1{font-size:clamp(72px,11.4vw,125px);letter-spacing:-5px}}
 @media(max-width:760px){.folio-hero h1{font-size:clamp(54px,12vw,88px);letter-spacing:-2.7px;line-height:1.08;margin-bottom:23px}.folio-hero .hero-copy>.hero-introduction{font-size:15px;line-height:1.8;max-width:100%}.folio-hero .hero-copy .eyebrow{font-size:7px;letter-spacing:.7px}}
+/* Larger, more readable hero supporting copy. */
+.folio-hero .hero-copy>.hero-introduction{font-size:clamp(22px,2vw,28px);line-height:1.6;max-width:960px;letter-spacing:-.35px;color:#b5bdc4}
+@media(max-width:760px){.folio-hero .hero-copy>.hero-introduction{font-size:21px;line-height:1.65;letter-spacing:-.2px;max-width:100%}.folio-hero .hero-introduction .desktop-break{display:none}}
