@@ -34,3 +34,7 @@ The bookshelf and five individual book pages use the supplied summaries. Product
 ## Visual direction
 
 The current layout adapts the supplied home.pdf: forest-green introduction card, typographic identity panel pending a real portrait, serif editorial headings, accessible three-chapter journey tabs, deep-green venture feature, bordered project cards, and a writing index. The reference person’s credentials, portrait, employers, and awards are not used.
+
+## Current content direction
+
+The latest supplied portfolio notes establish Midnight Blue (#101D30), four journey chapters (Designer, Design Leader, Founder, Author), eight-plus years in product design, approved work summaries, five ventures including Ridewave, and ADPList mentorship. Numeric leadership claims are omitted pending validation. No testimonials or external profile links are invented.
