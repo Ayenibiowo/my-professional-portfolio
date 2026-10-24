@@ -38,3 +38,7 @@ The current layout adapts the supplied home.pdf: forest-green introduction card,
 ## Current content direction
 
 The latest supplied portfolio notes establish Midnight Blue (#101D30), four journey chapters (Designer, Design Leader, Founder, Author), eight-plus years in product design, approved work summaries, five ventures including Ridewave, and ADPList mentorship. Numeric leadership claims are omitted pending validation. No testimonials or external profile links are invented.
+
+## Header and hero
+
+Fixed four-link header: My Journey, About me, Work, Writing, shared across all seven pages. The homepage uses an editorial statement and a compact profile card, with deep ink and warm ivory as its primary palette. Anchor offsets account for the fixed navigation.
