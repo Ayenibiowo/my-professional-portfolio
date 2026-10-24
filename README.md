@@ -22,14 +22,14 @@ Deploy the generated `dist/` directory to a static hosting provider.
 
 ## Content to finalise
 
-- Replace the clearly labeled Arc and Bloom concepts with verified project case studies.
+- Add original product screenshots and full case studies for procurement, Koliv, lending, and BiBuddy. Current interface treatments are illustrative.
 - Add verified venture product screens, company links, career details, and a portrait if desired.
 - Replace the contact notice/dialog with a verified email or booking URL.
 - Add the official cover and purchase link for the published In the Beginning, There Was Design.
 - Other books expose summaries only; full manuscript content and excerpts are omitted, not just visually hidden.
 - Confirm the biography and original concept cover treatments before publication.
 
-The bookshelf and five individual book pages use the supplied summaries. Product illustrations and cover treatments are original HTML/CSS artwork. No client outcomes or testimonials are claimed. Google Fonts is optional; system sans-serif fallbacks are included. No credentials or backend services are required.
+The bookshelf and five individual book pages use the supplied summaries. Product illustrations and cover treatments are original HTML/CSS artwork. No client outcomes or testimonials are claimed. Newsreader and Commissioner fonts are self-hosted in public/fonts, with their licenses and system fallbacks. No credentials or backend services are required.
 
 ## Visual direction
 
