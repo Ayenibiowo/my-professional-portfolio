@@ -50,3 +50,7 @@ The current presentation follows the supplied FOLIO.pdf: a dark gallery, oversiz
 The FOLIO layout now uses the reference’s single oversized professional title, visual-first project cards with minimal captions, wide visual/content column and narrow stacked information sidebar. Existing venture and book content extends the wider column; current journey, expertise, and mentorship content extends the sidebar. A typographic identity panel occupies the reference portrait slot until a real portrait is supplied.
 
 On desktop, the profile/experience/statistics group is sticky below the fixed header while the right-hand information panels scroll. It releases at the end of that two-column section; ventures and writing follow below. Mobile uses normal document scrolling.
+
+## Pages and display controls
+
+The header opens /journey/, /about/, /work/, and /books/ as separate static pages. Let's talk links to the homepage contact section. Floating controls scroll up/down one screen at a time and switch between dark/light themes. The theme is stored locally in the browser; no account or backend is required. All ten routes are included in the Vite production build. Netlify serves their generated index.html files directly.
