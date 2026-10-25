@@ -10,3 +10,15 @@ updateToggle();
 toggle.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='light'?'dark':'light';try{localStorage.setItem('portfolio-theme',root.dataset.theme);}catch{}updateToggle();});
 dock.querySelectorAll('[data-scroll]').forEach(button=>button.addEventListener('click',()=>window.scrollBy({top:innerHeight*.8*(button.dataset.scroll==='up'?-1:1),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})));
 for(const a of document.querySelectorAll('nav a'))if(a.pathname===location.pathname)a.setAttribute('aria-current','page');
+// On inner pages, surface the back link next to the menu when scrolling upward.
+const header=document.querySelector('.header');
+if(header?.querySelector('.header-back')){
+ let previousY=window.scrollY;
+ window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  if(y<120)header.classList.remove('show-header-back');
+  else if(y<previousY-3)header.classList.add('show-header-back');
+  else if(y>previousY+3)header.classList.remove('show-header-back');
+  previousY=y;
+ },{passive:true});
+}
