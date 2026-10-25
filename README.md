@@ -58,3 +58,5 @@ The header opens /journey/, /about/, /work/, and /books/ as separate static page
 ## Project detail pages
 
 Project cards now navigate to four static routes under /work/: stanbic-digital-lending, titan-document-workflows, healthcare-records, and public-service-transformation. Each has a large title, summary, known project metadata, illustrative interface, context and experience priorities, and next-project navigation. These are project overviews: research, dates, tools, responsibilities and measured outcomes must be supplied before presenting full case studies.
+
+The project bodies follow Sample.pdf: horizontal sticky section navigation; overview, problem, goal, research, design process, testing, solution, results, and reflection. Unprovided research/testing/results are explicitly identified as unpublished; the sample's client work and metrics are not used as personal evidence.
