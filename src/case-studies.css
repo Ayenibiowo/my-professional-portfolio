@@ -1,0 +1,38 @@
+/* Imported case studies reuse the established editorial structure and midnight palette. */
+.project-detail-page{--case-heading-font:Newsreader,Georgia,serif;--case-body-font:Commissioner,Arial,sans-serif;font-family:var(--case-body-font)}
+.project-detail-page .case-hero h1,.project-detail-page .sample-case-section h2,.project-detail-page .sample-goal-quote,.project-detail-page .sample-reflection blockquote,.project-detail-page .case-next h2{font-family:var(--case-heading-font)}
+.project-detail-page .case-hero h1{font-size:clamp(42px,6.5vw,88px);letter-spacing:-2px;max-width:1050px}
+.project-detail-page .sample-case-section h3,.project-detail-page .eyebrow,.project-detail-page .case-section-nav,.project-detail-page .case-metadata,.project-detail-page .case-overview-facts,.project-detail-page figcaption{font-family:var(--case-body-font)}
+.imported-case-study .case-hero h1{font-family:Newsreader,Georgia,serif;font-size:clamp(42px,6.5vw,88px);letter-spacing:-2px;max-width:1050px}
+.imported-case-study .case-hero-summary{max-width:850px;font-size:clamp(19px,2vw,26px)}
+.imported-case-study .case-metadata{margin-top:38px}
+.imported-visual{background:#eaf0f5!important}
+.imported-visual>img{display:block;width:100%;height:auto;object-fit:contain;margin:0 auto}
+.case-lead-visual.imported-visual{padding:32px 32px 0}
+.case-lead-visual.imported-visual>img{max-height:760px;width:auto;max-width:100%}
+.imported-visual figcaption{margin-top:24px;font-size:12px;line-height:1.7}
+.case-lead-visual.imported-visual figcaption{margin-left:-32px;margin-right:-32px}
+.case-solution-visual.imported-visual{padding:24px 24px 0}
+.case-solution-visual.imported-visual figcaption{margin-left:-24px;margin-right:-24px}
+.imported-case-study .case-privacy-note{font-size:12px!important;max-width:900px}
+.imported-case-study .case-overview-facts dd{font-size:14px;line-height:1.6}
+.insight-number{display:block;font-size:11px;color:#92b8ed;margin-bottom:20px}
+.imported-project-art{display:flex;align-items:center;justify-content:center;padding:30px 30px 45px!important;background:#eaf0f5!important;height:350px!important;overflow:hidden}
+.imported-project-art>img{width:100%;height:100%;object-fit:contain;object-position:center;transition:transform .25s ease}
+.imported-project:hover .imported-project-art>img{transform:scale(1.025)}
+.imported-project .case-availability{color:inherit}
+.imported-case-study .sample-reflection{background:#162b46!important;border-color:#324b69!important}
+.imported-case-study .sample-reflection h2,.imported-case-study .sample-reflection blockquote{color:#f4f7fb!important}
+.imported-case-study .sample-reflection>.eyebrow,.imported-case-study .sample-reflection>p:not(.eyebrow){color:#c4d2e4!important}
+.imported-case-study .sample-reflection blockquote{border-color:#47617e}
+html[data-theme=light] .imported-case-study .sample-case-section h2{color:#15253f}
+html[data-theme=light] .imported-case-study .sample-case-section>p:not(.eyebrow){color:#4c6079}
+html[data-theme=light] .imported-case-study .sample-reflection h2{color:#f4f7fb}
+html[data-theme=light] .insight-number{color:#42658d}
+@media(max-width:760px){.imported-case-study .case-hero h1{letter-spacing:-1.3px}.case-lead-visual.imported-visual{padding:16px 16px 0}.case-lead-visual.imported-visual figcaption{margin-left:-16px;margin-right:-16px}.case-solution-visual.imported-visual{padding:12px 12px 0}.case-solution-visual.imported-visual figcaption{margin-left:-12px;margin-right:-12px}.imported-project-art{height:260px!important;padding:20px 20px 40px!important}}
+@media(prefers-reduced-motion:reduce){.imported-project-art>img{transition:none}.imported-project:hover .imported-project-art>img{transform:none}}
+
+/* Research artefacts keep the shared typography; prototype screens retain their original design. */
+.case-solution-visual.phone-visual{display:inline-block;vertical-align:top;width:calc(50% - 14px);max-width:420px;margin-right:20px}
+.case-solution-visual.phone-visual>img{max-width:375px}
+@media(max-width:760px){.case-solution-visual.phone-visual{display:block;width:100%;margin-right:0}}
