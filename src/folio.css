@@ -85,3 +85,8 @@ html[data-theme=light]{color-scheme:light;background:#f2f4f7;color:#20252d;--pri
 /* Project taxonomy: discipline, sector, application type. */
 .project .project-badge{max-width:calc(100% - 30px);white-space:normal;text-align:left;font-size:10px;line-height:1.6;padding:8px 12px;background:#15233ce8;border-color:#8fa9d75c;color:#e2ecff!important;letter-spacing:.15px;backdrop-filter:blur(8px)}html[data-theme=light] .project .project-badge{background:#fffffff0;color:#294f88!important;border-color:#bdd0ee}
 @media(max-width:760px){.project .project-badge{font-size:9px;padding:7px 10px;max-width:calc(100% - 28px)}}
+/* User-provided profile photograph replaces the typographic identity artwork. */
+.folio-identity-visual .profile-photo{height:430px;overflow:hidden;background:#15233a}.profile-photo>img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 58%}.folio-identity-visual .identity-visual-note{position:relative;background:#111b2c;color:#a4b9d7}
+@media(min-width:761px){.folio-pinned-panel .profile-photo{height:clamp(220px,calc(100svh - 490px),430px)}}
+@media(max-width:760px){.folio-identity-visual .profile-photo{height:380px}.profile-photo>img{object-position:50% 58%}}
+html[data-theme=light] .folio-identity-visual .identity-visual-note{background:#edf3ff;color:#5277ab}
