@@ -74,3 +74,5 @@ html[data-theme=light]{color-scheme:light;background:#f2f4f7;color:#20252d;--pri
 @media(max-width:760px){.site-frame footer{display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding-right:50px}.site-frame footer .identity{flex-basis:auto}.site-frame footer .identity>span:last-child{font-size:12px}.site-frame footer>p,.site-frame footer>span,.site-frame footer>a:not(.identity){font-size:12px}.site-frame footer>p{margin:0}}
 /* Stack the writing introduction below its heading. */
 .folio-main-column .merged-writing .archive-heading{display:block}.folio-main-column .merged-writing .archive-heading>p{margin:18px 0 0;max-width:760px;font-size:14px;line-height:1.8}.folio-main-column .merged-writing .archive-heading>p br{display:none}
+/* No trailing divider after the final mentorship focus item. */
+.mentor-focus li:last-child,html[data-theme=light] .mentor-focus li:last-child{border-bottom:0}
