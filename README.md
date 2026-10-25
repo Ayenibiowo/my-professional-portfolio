@@ -54,3 +54,7 @@ On desktop, the profile/experience/statistics group is sticky below the fixed he
 ## Pages and display controls
 
 The header opens /journey/, /about/, /work/, and /books/ as separate static pages. Let's talk links to the homepage contact section. Floating controls scroll up/down one screen at a time and switch between dark/light themes. The theme is stored locally in the browser; no account or backend is required. All ten routes are included in the Vite production build. Netlify serves their generated index.html files directly.
+
+## Project detail pages
+
+Project cards now navigate to four static routes under /work/: stanbic-digital-lending, titan-document-workflows, healthcare-records, and public-service-transformation. Each has a large title, summary, known project metadata, illustrative interface, context and experience priorities, and next-project navigation. These are project overviews: research, dates, tools, responsibilities and measured outcomes must be supplied before presenting full case studies.
