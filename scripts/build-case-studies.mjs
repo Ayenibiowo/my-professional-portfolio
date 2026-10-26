@@ -61,7 +61,8 @@ for (const path of ['index.html','work/index.html']) {
   let html = read(path);
   if (!html.includes('/src/case-studies.css')) html = html.replace('</head>','<link href="/src/case-studies.css" rel="stylesheet"/></head>');
   const cards = [...html.matchAll(/<a class="project(?: imported-project)?"[\s\S]*?<\/a>/g)];
-  const retained = cards.filter(m=>!caseStudies.some(c=>m[0].includes(`href="/work/${c.slug}/"`)));
+  const retired = ["/work/stanbic-digital-lending/","/work/healthcare-records/","/work/public-service-transformation/"];
+  const retained = cards.filter(m=>!caseStudies.some(c=>m[0].includes(`href="/work/${c.slug}/"`)) && !retired.some(href=>m[0].includes(`href="${href}"`)));
   if (!cards.length) throw new Error(`No project cards found in ${path}`);
   const start=cards[0].index, last=cards.at(-1), end=last.index+last[0].length;
   html = html.slice(0,start)+caseStudies.map(card).join('\n')+retained.map(m=>m[0]).join('\n')+html.slice(end);
