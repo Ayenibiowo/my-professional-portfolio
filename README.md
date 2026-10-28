@@ -60,3 +60,13 @@ The header opens /journey/, /about/, /work/, and /books/ as separate static page
 Project cards now navigate to four static routes under /work/: stanbic-digital-lending, titan-document-workflows, healthcare-records, and public-service-transformation. Each has a large title, summary, known project metadata, illustrative interface, context and experience priorities, and next-project navigation. These are project overviews: research, dates, tools, responsibilities and measured outcomes must be supplied before presenting full case studies.
 
 The project bodies follow Sample.pdf: horizontal sticky section navigation; overview, problem, goal, research, design process, testing, solution, results, and reflection. Unprovided research/testing/results are explicitly identified as unpublished; the sample's client work and metrics are not used as personal evidence.
+
+## Imported enterprise case studies
+
+The homepage and Work gallery now include Oando Asset Management, Craneburg HRMS, Titan Trust Bank EDMS, NIBSS CRM, and Keystone Source to Settle. Titan retains its existing route. All five follow the Overview / Problem / Goal / Research / Design process / Testing / Solution / Results / Reflection format and use project-specific Figma exports saved locally as WebP files. Existing lending, healthcare, and public-sector overviews remain available.
+
+Edit the copy in `src/case-studies.js`; `npm run build:case-studies` regenerates the static pages and gallery entries. The production build runs this step automatically. Quantitative targets are distinguished from outcomes; inconsistent percentage claims and unrelated copied passages/screens have been excluded. Oando uses its available asset dashboard rather than the unrelated Craneburg images in the source draft. Images are not loaded from expiring Figma URLs.
+
+## Restfinder research and Koliv
+
+The sixth case study, `/work/restfinder-ux-research/`, follows the same nine-section format and shared Newsreader/Commissioner typography. It connects the Lagos roommate study to Koliv as described by Oluwaseun Ayeni, credits the original June 2022 presentation to Samuel Olumoyeke, and distinguishes research findings, proposed features, and future usability validation. Copy lives in `src/restfinder-case-study.js`; original artefacts are stored locally alongside the other case-study images.

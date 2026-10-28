@@ -1,1 +1,15 @@
-{"name":"seun-ayeni-portfolio","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","preview":"vite preview --host 0.0.0.0"},"devDependencies":{"vite":"^7.1.0"}}
+{
+  "name": "seun-ayeni-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "node scripts/build-case-studies.mjs && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "build:case-studies": "node scripts/build-case-studies.mjs"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}
