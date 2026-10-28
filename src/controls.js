@@ -10,15 +10,18 @@ updateToggle();
 toggle.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='light'?'dark':'light';try{localStorage.setItem('portfolio-theme',root.dataset.theme);}catch{}updateToggle();});
 dock.querySelectorAll('[data-scroll]').forEach(button=>button.addEventListener('click',()=>window.scrollBy({top:innerHeight*.8*(button.dataset.scroll==='up'?-1:1),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})));
 for(const a of document.querySelectorAll('nav a'))if(a.pathname===location.pathname)a.setAttribute('aria-current','page');
-// On inner pages, surface the back link next to the menu when scrolling upward.
+// Keep the contextual return link available after its page-row counterpart scrolls away.
 const header=document.querySelector('.header');
-if(header?.querySelector('.header-back')){
- let previousY=window.scrollY;
+const backRow=document.querySelector('.case-back-row, .page-back-row');
+if(header?.querySelector('.header-back')&&backRow){
+ const updateHeaderBack=()=>header.classList.toggle('show-header-back',backRow.getBoundingClientRect().bottom<=header.getBoundingClientRect().bottom+12);
+ let scheduled=false;
  window.addEventListener('scroll',()=>{
-  const y=window.scrollY;
-  if(y<120)header.classList.remove('show-header-back');
-  else if(y<previousY-3)header.classList.add('show-header-back');
-  else if(y>previousY+3)header.classList.remove('show-header-back');
-  previousY=y;
+  if(scheduled)return;
+  scheduled=true;
+  requestAnimationFrame(()=>{updateHeaderBack();scheduled=false;});
  },{passive:true});
+ window.addEventListener('resize',updateHeaderBack);
+ window.addEventListener('pageshow',updateHeaderBack);
+ updateHeaderBack();
 }

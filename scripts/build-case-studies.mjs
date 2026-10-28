@@ -46,7 +46,7 @@ for (const [index,c] of caseStudies.entries()) {
   const next = caseStudies[(index+1)%caseStudies.length];
   const html = `${head}
 <body><div class="site-frame project-detail-page imported-case-study">${header}<main>
-<div class="case-back-row"><a class="page-back-link" href="/work/">← Back to work</a><span class="back-page-label">${esc(c.client)}</span></div>
+<div class="case-back-row"><a class="page-back-link" href="/work/" aria-label="Back to work"><svg aria-hidden="true" class="back-chevron" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="m14 5-7 7 7 7"></path></svg><span>Back to work</span></a><span class="back-page-label">${esc(c.client)}</span></div>
 <section class="case-hero"><p class="eyebrow">${esc(c.sector)} · ${esc(c.category || 'Product design')}</p><h1>${esc(c.title)}</h1><p class="case-hero-summary">${esc(c.summary)}</p><dl class="case-metadata"><div><dt>${esc(c.clientLabel || 'Client')}</dt><dd>${esc(c.client)}</dd></div><div><dt>${esc(c.roleLabel || 'Role')}</dt><dd>${esc(c.role)}</dd></div><div><dt>${esc(c.durationLabel || 'Duration')}</dt><dd>${esc(c.duration)}</dd></div></dl></section>
 <figure class="case-lead-visual imported-visual">${img(c.hero,c.heroAlt,true)}<figcaption>${esc(c.heroCaption || `${c.client} — ${c.title}. Project interface from the original case study.`)}</figcaption></figure>
 <nav aria-label="Project sections" class="case-section-nav">${sections.map(([id,label])=>`<a href="#${id}">${label}</a>`).join('')}</nav>

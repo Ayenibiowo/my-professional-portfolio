@@ -15,3 +15,24 @@ html[data-theme=light] .header-talk,html[data-theme=light] .dark{background:#000
 html[data-theme=light] .header-talk:hover,html[data-theme=light] .dark:hover{background:#262626}
 html[data-theme=light] .hero-accent,html[data-theme=light] .career-stats strong,html[data-theme=light] .project-info>span{color:#000}
 html[data-theme=dark] .hero-accent{color:#fff}
+
+/* Contextual return links share a clear label, icon, and comfortable target. */
+.page-back-link,.header-back{min-height:44px;font-family:Commissioner,Arial,sans-serif;font-size:14px;font-weight:500;line-height:1.4;gap:8px}
+.page-back-link .back-chevron,.header-back .back-chevron{width:18px;height:18px}
+.page-back-link:hover>span,.header-back:hover>span{text-decoration:underline;text-underline-offset:4px}
+.page-back-link:focus-visible,.header-back:focus-visible{outline:2px solid currentColor;outline-offset:4px;border-radius:3px}
+.project-detail-page .case-back-row{gap:16px;align-items:center}
+.case-back-row .back-page-label{font-family:Commissioner,Arial,sans-serif;font-size:13px;line-height:1.5;padding-left:16px}
+@media(max-width:760px){.page-back-link,.header-back{font-size:13px}.project-detail-page .case-back-row{gap:12px}.case-back-row .back-page-label{font-size:12px;padding-left:12px;max-width:45vw}}
+
+/* Brand palette: pure black primary, pure white secondary. */
+:root{--brand-primary:#000000;--brand-secondary:#ffffff}
+html[data-theme=dark]{color-scheme:dark;background:var(--brand-primary);color:var(--brand-secondary);--primary:#ffffff;--accent:#ffffff;--accent-blue:#ffffff;--accent-blue-bright:#ffffff;--line:#303030;--muted:#b3b3b3}
+html[data-theme=dark] body{background:#000000;color:#ffffff}
+html[data-theme=dark] .header,html[data-theme=dark] .header:before{background:#000000f5}
+html[data-theme=dark] .folio-hero h1,html[data-theme=dark] .case-hero h1,html[data-theme=dark] .section-heading h2,html[data-theme=dark] .contact h2,html[data-theme=dark] .contact h2>span{color:#ffffff}
+html[data-theme=dark] .folio-main-column>.section,html[data-theme=dark] .folio-sidebar>.section,html[data-theme=dark] .contact{background:#000000;background-image:none;border-color:#303030}
+html[data-theme=dark] .header-talk,html[data-theme=dark] .mentee-button,html[data-theme=dark] .buy-book-link,html[data-theme=dark] .more-projects-button,html[data-theme=dark] .published-book-link,html[data-theme=dark] .contact .button{background:#ffffff;color:#000000;border-color:#ffffff}
+html[data-theme=dark] .header-talk:hover,html[data-theme=dark] .mentee-button:hover,html[data-theme=dark] .buy-book-link:hover,html[data-theme=dark] .contact .button:hover{background:#e6e6e6;color:#000000}
+html[data-theme=dark] .case-section-nav{background:#000000f5}
+html[data-theme=light]{color-scheme:light}
